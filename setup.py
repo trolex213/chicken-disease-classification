@@ -28,12 +28,4 @@ setuptools.setup(
     packages=setuptools.find_packages(where="src")
 )
 
-
-
-
-
-
-
-
-
 '''so we specify which directory to look in, in this case "src"? And the find_packages function simply looks within the specified "src" directory for all packages inside it as long as there contains __init__.py script inside the directory'''
