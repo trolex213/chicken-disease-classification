@@ -6,7 +6,7 @@ notebook
 numpy 
 matplotlib
 seaborn 
-pyton-box==6.0.2
+python-box==6.0.2
 pyYAML
 tqdm
 ensure==1.0.2
@@ -15,3 +15,4 @@ types-PyYAML
 scipy
 Flask
 Flask-Cors 
+-e . 
