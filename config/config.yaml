@@ -2,13 +2,7 @@ artifacts_root: artifacts # Path to the root directory where all the artifacts w
 
 # Data ingestion configuration
 data_ingestion: 
-  '
-  root_dir -> Path to the root directory where the data will be stored.
-  source_URL -> URL from where the data will be downloaded.
-  local_data_file -> Path to the local file where the zipped dataset will be saved. 
-  unzip_dir -> Path to the directory where the unzipped data will be stored.
-  '
-  root_dir: artifcats/data_ingestion 
-  source_URL: https://github.com/trolex213/chickendiseasedataset/raw/main/Chicken-fecal-images.zip
-  local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  root_dir: artifacts/data_ingestion # Path to the root directory where the data will be stored
+  source_URL: https://github.com/trolex213/chickendiseasedataset/raw/main/Chicken-fecal-images.zip # URL from where the data will be downloaded
+  local_data_file: artifacts/data_ingestion/data.zip # Path to the local file where the zipped dataset will be saved
+  unzip_dir: artifacts/data_ingestion/unzipped_data # Path to the directory where the unzipped data will be stored

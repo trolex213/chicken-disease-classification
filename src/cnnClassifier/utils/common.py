@@ -8,7 +8,7 @@ import joblib
 from ensure import ensure_annotations
 from box import ConfigBox 
 from pathlib import Path 
-from typing import Any
+from typing import List, Any
 import base64
 
 @ensure_annotations
@@ -32,7 +32,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     
 
 @ensure_annotations
-def create_directories(path_to_directories: list, verbose=True):
+def create_directories(path_to_directories: List[Path], verbose=True):
     '''
     creates list of directories 
 
@@ -41,7 +41,7 @@ def create_directories(path_to_directories: list, verbose=True):
     verbose: bool -> whether to log the creation of the directories or not (in this case set to True, so we do)
     '''
     for path in path_to_directories:
-        os.makedir(path, exist_ok=True)
+        os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"Created directory at {path}")
 
