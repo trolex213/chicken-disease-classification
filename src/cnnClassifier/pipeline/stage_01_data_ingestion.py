@@ -1,4 +1,8 @@
-from cnnClassifier.config import ConfigurationManager
+import os 
+import sys 
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
+from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.data_ingestion import DataIngestion
 from cnnClassifier import logger
 
