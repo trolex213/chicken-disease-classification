@@ -160,3 +160,8 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+artifacts/*
+# We're adding the artifacts folder to the .gitignore file to prevent the artifacts from being pushed to the repository, since 
+# the artifacts folder typically contains large files that are not needed in the repository. 
+
