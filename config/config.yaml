@@ -11,3 +11,9 @@ prepare_base_model:
   root_dir: artifacts/prepare_base_model # Path to the root directory where the base model will be stored
   base_model_path: artifacts/prepare_base_model/base_model.h5 # Path to the base model file
   updated_base_model_path: artifacts/prepare_base_model/updated_base_model.h5 # Path to the updated base model file
+
+prepare_callbacks:
+  root_dir: artifacts/prepare_callbacks # Path to the root directory where the callbacks will be stored
+  tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_logs # Path to the root directory where the tensorboard logs will be stored
+  checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5 # Path to the model checkpoint file
+
