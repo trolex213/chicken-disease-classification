@@ -17,3 +17,7 @@ prepare_callbacks:
   tensorboard_root_log_dir: artifacts/prepare_callbacks/tensorboard_logs # Path to the root directory where the tensorboard logs will be stored
   checkpoint_model_filepath: artifacts/prepare_callbacks/checkpoint_dir/model.h5 # Path to the model checkpoint file
 
+training:
+  root_dir: artifacts/training # Path to the root directory where the training artifacts will be stored
+  trained_model_path: artifacts/training/model.h5 # Path to the trained model file
+  
